@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  overflow: hidden;
+  height: 100%;
 }
 
 .App-logo {
@@ -14,14 +16,32 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #b3e5fc;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow: hidden;
+  height: 100%;
+}
+
+.memory-game-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  width: 100%;
+  height: 100%;
+}
+
+.memory-game-main {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
 }
 
 .App-link {
@@ -35,4 +55,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#render-grounds {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-wrap: wrap;
+  border: solid #E7EBE0FF;
+  border-width: 1%;
+  background-image: url("https://pbs.twimg.com/media/EXcx3V4X0AEWul5.jpg");
+  background-size: cover;
+}
+
+.difficulty-button {
+  color: #e1f5fe;
+  height: 50%;
+  width: 100%;
+  margin: 10px 0 10px 0;
+  border: solid 2px #e1f5fe;
+  background-color: #4fc3f7;
+  border-radius: 100vw;
+  font-size: 1.3vw;
 }
